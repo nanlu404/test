@@ -1,0 +1,537 @@
+
+<!doctype html>
+<html lang="zh">
+<head>
+	<title>教务处</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<script type="text/javascript" src="/dynamic/jquery.js"></script>
+	<script type="text/javascript" src="/dynamic/base.js"></script>
+	<script type="text/javascript" src="/dynamic/grayscale.js"></script>
+	<script type="text/javascript" src="/dynamic/andaAd.js"></script>
+	<script type="text/javascript" src="/dynamic/showAd.js"></script>
+	<script type="text/javascript">$(function(){pageView('5a002f84b31d47e980db00be90328d98','','');});</script>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/template/44/images/reset.css" type="text/css" rel="stylesheet" />
+    <link href="/template/44/images/index.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="/template/44/images/index_phone.css" type="text/css"/>
+    <script src="/template/44/images/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/template/44/images/jquery.SuperSlide.js"></script>
+	<script type="text/javascript" src="/template/44/images/public.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".newslist1 ul li:lt(3)").children("span").addClass("red");
+		});
+$(function(){
+			 var checkDate = function(obj){
+			 	var temp=$(obj);
+			 	for(var i=0;i<temp.length;i++){
+			 		var nowdate = new Date();
+			 		var contime=temp.eq(i).attr("data-time");
+			 		//判断年份是否一致
+			 		var tempY=nowdate.getFullYear()-contime.substr(0,4);
+			 		var tempM=nowdate.getMonth()+1-contime.substr(5,2);
+			 		var tempD=nowdate.getDate()-contime.substr(8,2);
+			 		//console.log("i="+tempY+"***"+tempM+"***"+tempD);
+			 		//年份一致
+			 		if(tempY==0){
+			 		//月份一致
+			 			if(tempM==0){
+			 				//日期
+			 				if(tempD<=6){
+			 					 $(temp.get(i)).addClass("dt_new");
+			 				}
+			 			}
+			 			if(tempM==1){
+			 				if(tempD<=-25){
+			 					$(temp.get(i)).addClass("dt_new");
+			 				}
+			 			}
+			 		}else{//年份不一致
+			 			if(tempY<=1){
+			 				if(tempM==-11){
+			 					if(tempD<=-25){
+			 						$(temp.get(i)).addClass("dt_new");
+			 					}
+			 				}
+			 			}
+			 		}
+			 	}  
+			 };
+			checkDate(".new_data_time ul li div");
+		});
+		
+	</script>
+</head>
+<body>
+	<div class="headers">
+		<span class="index"><img src="/template/44/images/st.png"/></span>
+		<a class="logo"><img src="/template/44/images/phone_top_logo.png" /></a>
+		<div class="fh_bc"></div>
+		<div class="fh_dh">
+			<ul>
+				<li><a href="/" class="yj_a">首页</a></li>
+				<li class="yj_li"><a href="/a/jgsz/" class="yj_a">机构设置</a></li>
+				<li class="yj_li"><a href="/a/gzzd/" class="yj_a">规章制度</a></li>
+				<li class="yj_li"><a href="/a/bszn/" class="yj_a">办事指南</a></li>
+				<li class="yj_li"><a href="/a/jwgl/" class="yj_a">教务管理</a></li>
+				<li class="yj_li"><a href="/a/ksxx/" class="yj_a">考试信息</a></li>
+				<li class="yj_li"><a href="/a/jcgl/" class="yj_a">教材管理</a></li>
+				<li class="yj_li"><a href="/a/jxgg/" class="yj_a">教学改革</a></li>
+				<li class="yj_li"><a href="/a/kcjs/" class="yj_a">课程建设</a></li>
+				<li class="yj_li"><a href="/a/lcjx/" class="yj_a">临床教学</a></li>
+				<li class="yj_li"><a href="https://zsb.hebmu.edu.cn/" target="_blank" class="yj_a">高招信息</a></li>
+			</ul>
+		</div>
+	</div>
+    <!--头部内容开始-->
+    <!--导航内容开始-->
+    <div class="nav">
+        <div class="navcon w1100" style="background: #810720">
+			<ul>
+                <li><a href="/">网站首页</a></li>
+                <li><a href="/a/jgsz/">机构设置</a></li>
+                <li><a href="/a/gzzd/">规章制度</a></li>
+                <li><a href="/a/bszn/">办事指南</a></li>
+                <li><a href="/a/jwgl/">教务管理</a></li>
+                <li><a href="/a/ksxx/">考试信息</a></li>
+                <li><a href="/a/jcgl/">教材管理</a></li>
+                <li><a href="/a/jxgg/">教学改革</a></li>
+                <li><a href="/a/kcjs/">课程建设</a></li>
+                <li><a href="/a/lcjx/">临床教学</a></li>
+                <li><a href="https://zsb.hebmu.edu.cn/" target="_blank">高招信息</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--导航内容结束-->
+    <div class="indexWrap">
+        <div class="w1100">
+            <div class="head1">
+				<div class="logo"></div>
+                <div class="sch">
+					<div class="top_nav">
+                        <p>
+                            <img src="/template/44/images/share.jpg">&nbsp;<a href="mailto:wuym@hebmu.edu.cn?subject=给河北医科大学教务处的一封信&body=你好">处长信箱</a>&nbsp;|
+                            <img src="/template/44/images/rel.jpg">&nbsp;<a href="/a/lxwm/" target="_blank">联系我们</a>&nbsp;|
+                            <img src="/template/44/images/shouye.jpg">&nbsp;<a href="http://202.206.48.73/jwc/index.asp">旧版入口</a>
+                        </p>
+                    </div>
+                    <div class="schx">
+                        <form method="post" name="searchForm" action="/dynamic/search.jsp" target="_blank">
+                            <input name="keyword" type="text" class="txt"/>
+                            <input type="submit" value="" class="btn"/>
+                        </form>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--头部内容结束-->
+
+    <!--页面内容开始-->
+    <div class="wrap">
+        <!--主体内容开始-->
+        <div class="w1100">
+            <!-- 第一部分内容开始 -->
+            <div class="news">
+                <div class="newscon">
+                    <!-- 轮播图 -->
+                    <div class="left">
+                        <div class="focusBox">
+							<ul class="pic">
+ 
+                                <li><a href="https://jwc.hebmu.edu.cn/a/2022/07/18/AC4FA02035CC41CCA4D303DC60699323.html" target="_blank"><img src="https://www.hebmu.edu.cn/resources/40/202207/1657946084084003241.jpg"></a></li>
+ 
+                                <li><a href="https://jwc.hebmu.edu.cn/a/2022/07/01/9C1693665850419D8BC75440A8154365.html" target="_blank"><img src="https://www.hebmu.edu.cn/resources/40/202207/1656648260829030361.jpg"></a></li>
+ 
+                                <li><a href="https://jwc.hebmu.edu.cn/a/2022/06/22/7EBE7D0A40FE4344AD4632639F3DF828.html" target="_blank"><img src="https://www.hebmu.edu.cn/resources/40/202206/1655865771163011681.jpg"></a></li>
+ 
+                                <li><a href="https://jwc.hebmu.edu.cn/a/2022/05/31/4A3023CA847540A0999416871826DCB9.html" target="_blank"><img src="https://jwc.hebmu.edu.cn/resources/40//202205/1653958201601063857.jpg"></a></li>
+ 
+                                <li><a href="https://jwc.hebmu.edu.cn/a/2022/02/24/378E30E66AD44F719F7D77975009A2C4.html" target="_blank"><img src="https://www.hebmu.edu.cn/resources/40/202202/1645607086371081243.jpg"></a></li>
+
+
+                            </ul>
+							<div class="txt-bg"></div>
+                            <div class="txt">
+                                <ul>
+     
+                                <li><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/18/AC4FA02035CC41CCA4D303DC60699323.html" title="我校成功举办首届课程思政教学竞赛">我校成功举办首届课程思政教学竞赛</a></li>
+     
+                                <li><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/01/9C1693665850419D8BC75440A8154365.html" title="学校召开2022年春季学期第三次本科教学工作会议">学校召开2022年春季学期第三次本科教学工作会议</a></li>
+     
+                                <li><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/06/22/7EBE7D0A40FE4344AD4632639F3DF828.html" title="学校开展2022年春季学期线上期末考试巡查">学校开展2022年春季学期线上期末考试巡查</a></li>
+     
+                                <li><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/05/31/4A3023CA847540A0999416871826DCB9.html" title="我校举办2022年“大学生创新性实验计划项目”论坛">我校举办2022年“大学生创新性实验计划项目”论坛</a></li>
+     
+                                <li><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/02/24/378E30E66AD44F719F7D77975009A2C4.html" title="我校开展2022年春季学期开课首日教学检查">我校开展2022年春季学期开课首日教学检查</a></li>
+
+
+                                </ul>
+                            </div>
+                            <ul class="num">
+
+                                <li><a>1</a></li>
+ 
+                                <li><a>2</a></li>
+ 
+                                <li><a>3</a></li>
+ 
+                                <li><a>4</a></li>
+ 
+                                <li><a>5</a></li>
+ 
+
+                            </ul>
+                        </div>
+                        <script type="text/javascript">
+                            jQuery(".focusBox").slide({ titCell: ".num li", mainCell: ".pic", effect: "fold", autoPlay: true, trigger: "click", startFun: function (i) { jQuery(".focusBox .txt li").eq(i).animate({ "bottom": 0 }).siblings().animate({ "bottom": -36 }); } });
+                        </script>
+                    </div>
+                    <!-- 教务公告 -->
+                    <div class="newslist">
+                        <div class="tt">
+                            <a target="_blank" href="/a/jwgg/" class="gg icon4">教务公告</a><a target="_blank" href="/a/jwgg/" class="more">MORE></a>
+                        </div>
+                        <p class="newspic">
+							
+<a target="_blank" href="https://jwc.hebmu.edu.cn/a/2015/01/01/9EFA5C8079CC466681BD0F72FCE95716.html"><img src="https://jwc.hebmu.edu.cn/resources/40//20200717092450427.jpg" width="394" height="118" /></a>
+
+                        </p>
+                        <ul style="min-height: 155px; _height:155px;">
+							
+<li><span>2022-08-17</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/08/17/A5E0D6B8B45248D7A4FC486A13A297D9.html" title="河北医科大学一流本科课程建设及制作服务项目招标公告">河北医科大学一流本科课程建设及制作服务项目...</a></li>
+
+<li><span>2022-07-29</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/29/E573C70F6DE8487AB6BC698776DD8135.html" title="河北医科大学关于2022年增设新办专业的公示">河北医科大学关于2022年增设新办专业的公...</a></li>
+
+<li><span>2022-07-22</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/22/A7C737D91F5B474E91318AC6E862F72B.html" title="关于推荐参评2022年“河北省普通本科院校教学名师和优秀教学团队”的公示">关于推荐参评2022年“河北省普通本科院校...</a></li>
+
+<li><span>2022-07-18</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/18/BBA6265C01464A01A96ACB60CB90C362.html" title="我校成功举办首届课程思政教学竞赛">我校成功举办首届课程思政教学竞赛</a></li>
+
+<li><span>2022-07-12</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/12/65F7562E1C5947F29D58F9E120C211FD.html" title="河北医科大学2022年教育教学信息化交流活动结果公示">河北医科大学2022年教育教学信息化交流活...</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--第一部分内容结束-->
+
+            <!--第二部分内容开始-->
+            <div class="content1">
+                <div class="wx">
+                    <img src="/template/44/images/yd_27.png" width="80" height="80" /><p>教师微信平台</p>
+                </div>
+                <div class="wx">
+                    <img src="/template/44/images/yd_30.png" width="80" height="80" /><p>学生微信平台</p>
+                </div>
+                <div class="down">
+                    <a href="ftp://202.206.48.98/" target="_blank">
+                        <img src="/template/44/images/yd_44.png" alt="教务资源下载"/>
+                    </a>
+                </div>
+                <div class="leftbt"></div>
+                <div class="btn1">
+                    <a href="/a/ksjs/" target="_blank">
+                        <img src="/template/44/images/yd_33.png" /><p>题库建设</p>
+                    </a>
+                </div>
+                <div class="btn1">
+                    <a href="http://202.206.48.111:8020/" target="_blank">
+                        <img src="/template/44/images/yd_36.png" /><p>选课入口</p>
+                    </a>
+                </div>
+                <div class="btn1">
+                    <a href="https://jwweb.hebmu.edu.cn/" target="_blank">
+                        <img src="/template/44/images/yd_38_2.png" /><p>教务系统</p>
+                    </a>
+                </div>
+                <div class="btn1">
+                    <a href="http://202.206.50.53:88/ve/" target="_blank">
+                        <img src="/template/44/images/yd_42.png" /><p>教学平台</p>
+                    </a>
+                </div>
+                <div class="btn1">
+                    <a href="https://jwc.hebmu.edu.cn/a/2015/05/29/75AE732BF948491D9DAA4489C4D2F36E.html" target="_blank">
+                        <img src="/template/44/images/yd_v.png" /><p>学校校历</p>
+                    </a>
+                </div>
+                <div class="rightbt"></div>
+            </div>
+            <!--第二部分内容结束-->
+
+
+            <!--第三部分内容开始-->
+            <div class="content">
+                <!-- 左侧 -->
+                <div class="left">
+                    <div class="newslist1">
+                        <div class="tt tt-border">
+                            <a class="gg icon1">浏览排行榜</a>
+                        </div>
+                        <ul>
+							
+<li><span>1</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2020/08/07/12165B8151614293BBBFB4A280449B7A.html" title="河北医科大学教材管理系统">河北医科大学教材管理系统</a></li>
+
+<li><span>2</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/08/17/A5E0D6B8B45248D7A4FC486A13A297D9.html" title="河北医科大学一流本科课程建设及制作服务项目招标公告">河北医科大学一流本科课程建设及制作服务...</a></li>
+
+<li><span>3</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/29/E573C70F6DE8487AB6BC698776DD8135.html" title="河北医科大学关于2022年增设新办专业的公示">河北医科大学关于2022年增设新办专业...</a></li>
+
+<li><span>4</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/22/7998655D8143499E89DCB5CDB8FD2F6E.html" title="2022-2023-1学期教材选用结果公示">2022-2023-1学期教材选用结果...</a></li>
+
+<li><span>5</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/22/A7C737D91F5B474E91318AC6E862F72B.html" title="关于推荐参评2022年“河北省普通本科院校教学名师和优秀教学团队”的公示">关于推荐参评2022年“河北省普通本科...</a></li>
+
+<li><span>6</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/18/BBA6265C01464A01A96ACB60CB90C362.html" title="我校成功举办首届课程思政教学竞赛">我校成功举办首届课程思政教学竞赛</a></li>
+
+<li><span>7</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/18/AC4FA02035CC41CCA4D303DC60699323.html" title="我校成功举办首届课程思政教学竞赛">我校成功举办首届课程思政教学竞赛</a></li>
+
+<li><span>8</span><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2022/07/12/65F7562E1C5947F29D58F9E120C211FD.html" title="河北医科大学2022年教育教学信息化交流活动结果公示">河北医科大学2022年教育教学信息化交...</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 中间 -->
+                <div class="center">
+                    <div class="newslist2 new_data_time">
+                        <div class="tt tt-border">
+                            <a target="_blank" href="/a/jwdt/" class="gg icon2">教务动态</a><a target="_blank" href="/a/jwdt/" class="more">MORE></a>
+                        </div>
+                        <ul>
+							
+<li>
+                                <div data-time="2016-12-06" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2020/08/07/12165B8151614293BBBFB4A280449B7A.html" title="河北医科大学教材管理系统">河北医科大学教材管理系统</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2022-07-22" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2022/07/22/7998655D8143499E89DCB5CDB8FD2F6E.html" title="2022-2023-1学期教材选用结果公示">2022-2023-1学期教材选用结果公示</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2022-07-04" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2022/07/04/2E167D740E0B41349F2D2FCAC9B65A3B.html" title="2022年秋季教材征订通知">2022年秋季教材征订通知</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2022-04-15" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2022/04/15/750A63B1C28E4E1DB9836F5F0BF3A941.html" title="人民卫生出版社关于启动国家卫生健康委员会“十四五”规划教材、高等职业教育护理类专业规划教材第五轮修订通知">人民卫生出版社关于启动国家卫生健康委员会“十四...</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2021-11-29" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2021/11/29/2A3C91BB53A148C29BE454D34A854F5D.html" title="2022年春季教材征订通知">2022年春季教材征订通知</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2021-11-09" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2021/11/09/2D410DF8181943A3967085D78453AF22.html" title="北京大学医学出版社关于“十四五”高等院校本科临床医学专业规划教材（第5轮）主编、副主编、编委遴选工作的通知">北京大学医学出版社关于“十四五”高等院校本科临...</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2021-11-09" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2021/11/09/C99259460084418B82637AC799390877.html" title="人民卫生出版社关于全国高等学校医学影像技术专业第二轮规划教材">人民卫生出版社关于全国高等学校医学影像技术专业...</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2021-07-09" class=""><a target="_blank" class="cc" href="https://jwc.hebmu.edu.cn/a/2021/07/09/439DE40466C348D197F819D66FD7A3F0.html" title="2021-2022-1学期教材选用公示">2021-2022-1学期教材选用公示</a></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 右侧 -->
+                <div class="right">
+                    <div class="newslist3 new_data_time">
+                        <div class="tt tt-border ">
+                            <a href="" class="gg icon3" target="_blank">教务表格下载</a><a target="_blank" href="/a/jwbgxz/" class="more">MORE></a>
+                        </div>
+                        <ul>
+							
+<li>
+                                <div data-time="2018-03-16" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2016/04/08/E83EDE390C20403F940214B07F2F312F.html" title="河北医科大学考试成绩、信息更正申请表">河北医科大学考试成绩、信息更正申请表</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2017-03-08" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2017/03/08/70371F69540745F2ACFBD79BBE9BD0A4.html" title="2017年大学生创新性实验计划项目指导教师名单">2017年大学生创新性实验计划项目指导教...</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2016-12-08" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/1900/01/01/6DBFF27AF7D24E6F992659A94AFCC907.html" title="河北医科大学临时调课申请表">河北医科大学临时调课申请表</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2016-03-23" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/1900/01/01/0E300535025947E0B5D76C56AFA09E98.html" title="虚拟仿真实验项目">虚拟仿真实验项目</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2015-10-13" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2015/10/13/92001D9B2E2E481AA1A6D1C165820E88.html" title="河北医科大学试题库建设要求">河北医科大学试题库建设要求</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2015-04-29" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2015/09/01/F576A7ED1E16435B86BBFF20D187DCD4.html" title="二级学院综合改革试点年度建设计划书">二级学院综合改革试点年度建设计划书</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2015-01-21" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2015/09/01/80B94E8757F9463591068BC7901E4E75.html" title="教研室教学工作总结">教研室教学工作总结</a></div>
+                            </li>
+
+<li>
+                                <div data-time="2015-01-21" class=""><a target="_blank" href="https://jwc.hebmu.edu.cn/a/2015/09/01/D6DCC2E08E0746AEABB676C1C52A8B01.html" title="教学人员工作总结">教学人员工作总结</a></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--第三部分内容结束-->
+        </div>
+
+        <div class="clear"></div>
+        <!--链接内容开始-->
+        <div class="content2">
+            <div class="w1100">
+                <div id="con1">
+                    <ul id="tags">
+                        <li class="selectTag"><a onclick="selectTag('tagContent0',this)" href="javascript:void(0)">校内部门</a></li>
+                        <li><a onclick="selectTag('tagContent4',this)" href="javascript:void(0)">学校网站</a></li>
+                        <li><a onclick="selectTag('tagContent1',this)" href="javascript:void(0)">医院网站</a></li>
+                        <li><a onclick="selectTag('tagContent2',this)" href="javascript:void(0)">相关链接</a>
+                        <li><a onclick="selectTag('tagContent3',this)" href="javascript:void(0)">学习链接</a>
+                        </li>
+                    </ul>
+                    <div id="tagContent">
+                        <div class="tagContent selectTag" id="tagContent0">
+							
+ <a target="_blank" href="http://jcyxy.hebmu.edu.cn/">基础医学院</a>
+
+ <a target="_blank" href="http://sph.hebmu.edu.cn/">公共卫生学院</a>
+
+ <a target="_blank" href="https://pharmacy.hebmu.edu.cn/">药学院</a>
+
+ <a target="_blank" href="http://www.hbydkqyy.com/">口腔学院</a>
+
+ <a target="_blank" href="http://xwzq.hebmu.edu.cn:8083/">护理学院</a>
+
+ <a target="_blank" href="http://zxyjhxy.hebmu.edu.cn/">中西医结合学院</a>
+
+ <a target="_blank" href="http://gschool.hebmu.edu.cn/">研究生学院</a>
+
+ <a target="_blank" href="http://iec.hebmu.edu.cn/">国际教育学院</a>
+
+ <a target="_blank" href="http://lcxy.hebmu.edu.cn/">临床学院</a>
+
+ <a target="_blank" href="http://202.206.48.97/ces_hebmu/default.aspx">继续教育学院</a>
+
+                        </div>
+                        <div class="tagContent " id="tagContent4">
+                            
+ <a target="_blank" href="http://www.hebmu.edu.cn">河北医科大学</a>
+
+ <a target="_blank" href="http://www.bjmu.edu.cn/">北京大学医学部</a>
+
+ <a target="_blank" href="http://shmc.fudan.edu.cn/">复旦大学上海医学院</a>
+
+ <a target="_blank" href="http://www.smmu.edu.cn/">第二军医大学</a>
+
+ <a target="_blank" href="http://www.pumc.edu.cn/">北京协和医学院</a>
+
+ <a target="_blank" href="http://www.ccmu.edu.cn">首都医科大学</a>
+
+ <a target="_blank" href="http://www.fimmu.com/index_com.html">南方医科大学</a>
+
+ <a target="_blank" href="https://www.cmu.edu.cn/">中国医科大学</a>
+
+ <a target="_blank" href="http://www.njmu.edu.cn/">南京医科大学</a>
+
+ <a target="_blank" href="http://www.hrbmu.edu.cn/">哈尔滨医科大学</a>
+
+                        </div>
+                        <div class="tagContent " id="tagContent1">
+                            
+ <a target="_blank" href="http://www.jyyy.com.cn/">河北医科大学第一医院</a>
+
+ <a target="_blank" href="http://www.hb2h.com/">河北医科大学第二医院</a>
+
+ <a target="_blank" href="http://www.cthhmu.com/">河北医科大学第三医院</a>
+
+ <a target="_blank" href="http://www.hbydsy.com/">河北医科大学第四医院</a>
+
+ <a target="_blank" href="http://www.hbydkqyy.com/">河北医科大学口腔医院</a>
+
+                        </div>
+                        <div class="tagContent" id="tagContent2">
+                            
+ <a target="_blank" href="http://www.moe.gov.cn/">教育部</a>
+
+ <a target="_blank" href="http://www.nhc.gov.cn/">国家卫计委</a>
+
+ <a target="_blank" href="http://www.hee.cn/">河北省教育厅</a>
+
+ <a target="_blank" href="http://jyt.hebei.gov.cn/">河北省教育厅高教处</a>
+
+ <a target="_blank" href="http://www.hebwst.gov.cn/">河北省卫计委</a>
+
+ <a target="_blank" href="http://www.chsi.com.cn/">学信网</a>
+
+                        </div>
+                        <div class="tagContent" id="tagContent3">
+                            
+ <a target="_blank" href="http://hebmu.fanya.chaoxing.com/">河北医科大学网络教学平台</a>
+
+ <a target="_blank" href="http://pbl.hebmu.edu.cn/">河北医科大学PBL教学中心</a>
+
+ <a target="_blank" href="http://202.206.48.17/film/index.asp">河北医科大学医学视频点播</a>
+
+ <a target="_blank" href="http://www.imooc.com/">慕课网</a>
+
+ <a target="_blank" href="http://www.icourses.cn/home/">爱课程</a>
+
+ <a target="_blank" href="http://open.163.com/">网易公开课</a>
+
+ <a target="_blank" href="http://www.vko.cn/">微课网</a>
+
+ <a target="_blank" href="http://www.icourse163.org/">中国大学MOOC</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function selectTag(showContent, selfObj) {
+                // 操作标签
+                var tag = document.getElementById("tags").getElementsByTagName("li");
+                var taglength = tag.length;
+                for (i = 0; i < taglength; i++) {
+                    tag[i].className = "";
+                }
+                selfObj.parentNode.className = "selectTag";
+                // 操作内容
+                for (i = 0; j = document.getElementById("tagContent" + i); i++) {
+                    j.style.display = "none";
+                }
+                document.getElementById(showContent).style.display = "block";
+            }
+        </script>
+    </div>
+    <!--页面内容结束-->
+
+    <!--页面内容结束-->
+    <!--尾部内容开始-->
+    <div class="footer">
+        <div class="footercon">
+			<div class="txt">
+                CopyRight&copy;2015河北医科大学教务处版权所有<br>
+                地址：河北石家庄市中山东路361号<br>
+                email:jwc@hebmu.edu.cn<br/>技术支持：载驰科技
+            </div>
+        </div>
+    </div>
+    <!--尾部内容结束-->
+</body>
+</html>
+<!-- Powered by AndaCMS(安达网站群内容管理系统) v2.0.20210815-->
+<!-- 石家庄载驰科技有限责任公司 Copyright(C) 2010 - 2021 -->
